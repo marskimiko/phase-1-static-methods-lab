@@ -10,7 +10,9 @@ class Formatter {
   }
 
   static titleize(string) {
-    console.log(string.split(' ').toUpperCase[0])
+    let stringArray = string.split(' ')
+    let capFirst = stringArray[0].toUpperCase()
+    console.log(capFirst)
   //takes in a string and capitalizes all words in a sentence except the, a, an, but, of, and, for, at, by, and from; and always capitalizes the first word
   }
 }
