@@ -11,7 +11,7 @@ class Formatter {
 
   static titleize(string) {
     const words = string.toLowerCase().split(" ");
-  let newWords = words.map(word => {
+    let newWords = words.map(word => {
     if ( word !== 'the' && word !== 'a' && word !== 'an' && word !== 'but'  && word !== 'of' && word !== 'and' && word !== 'for' && word !== 'at' && word !== 'by' && word !== 'from'){
       return word[0].toUpperCase() + word.slice(1)
     } else {
@@ -19,6 +19,7 @@ class Formatter {
     }
   }).join(" ")
   return newWords[0].toUpperCase() + newWords.slice(1)
+    //console.log(string.toUpperCase())
     // let stringArray = string.split(' ')
     // let cap = stringArray.toUpperCase()
     // console.log(cap)
@@ -36,4 +37,4 @@ class Formatter {
 //     }
 //   }).join(" ")
 //   return newWords[0].toUpperCase() + newWords.slice(1)
-}
+// }
